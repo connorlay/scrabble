@@ -1,0 +1,8 @@
+*.class
+bin
+doc
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out
