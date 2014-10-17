@@ -29,13 +29,11 @@ public class AI implements Player {
 
 	@Override
 	public String getName() {
-		// TODO Auto-generated method stub
 		return name;
 	}
 
 	@Override
 	public int getScore() {
-		// TODO Auto-generated method stub
 		return score;
 	}
 
@@ -153,7 +151,6 @@ public class AI implements Player {
 
 	@Override
 	public ArrayList<Letter> getTray() {
-		// TODO Auto-generated method stub
 		return tray;
 	}
 

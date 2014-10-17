@@ -147,6 +147,7 @@ public class Game {
 				String word = input.nextLine();
 				dictionary.add(word.toLowerCase());
 			}
+			input.close();
 			return dictionary.toArray(new String[dictionary.size()]);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
