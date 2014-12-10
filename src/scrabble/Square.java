@@ -84,9 +84,13 @@ public class Square {
 	 * list?
 	 */
 	public boolean hasUniqueNeighbor(ArrayList<Square> word) {
-		return getTop() != null && getTop().getLetter() != null && !word.contains(getTop()) || getBottom() != null && getBottom().getLetter() != null
-				&& !word.contains(getBottom()) || getLeft() != null && getLeft().getLetter() != null && !word.contains(getLeft()) || getRight() != null
-				&& getRight().getLetter() != null && !word.contains(getRight());
+		return getTop() != null && getTop().getLetter() != null
+				&& !word.contains(getTop()) || getBottom() != null
+				&& getBottom().getLetter() != null
+				&& !word.contains(getBottom()) || getLeft() != null
+				&& getLeft().getLetter() != null && !word.contains(getLeft())
+				|| getRight() != null && getRight().getLetter() != null
+				&& !word.contains(getRight());
 	}
 
 	public Letter getLetter() {
@@ -106,7 +110,9 @@ public class Square {
 	}
 
 	public boolean clickOn() {
-		if (StdDraw.mouseX() > coordinates[0] - 20 && StdDraw.mouseX() < coordinates[0] + 20 && StdDraw.mouseY() > coordinates[1] - 20
+		if (StdDraw.mouseX() > coordinates[0] - 20
+				&& StdDraw.mouseX() < coordinates[0] + 20
+				&& StdDraw.mouseY() > coordinates[1] - 20
 				&& StdDraw.mouseY() < coordinates[1] + 20) {
 			return true;
 		}

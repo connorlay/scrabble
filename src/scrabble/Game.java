@@ -200,7 +200,6 @@ public class Game {
 	 * player's tray.
 	 **/
 	private Letter findLetterInTray(char c, Player player) {
-		/* For each letter in tray */
 		for (Letter letter : player.getTray()) {
 			if (letter.getCharacter() == c) {
 				return letter;

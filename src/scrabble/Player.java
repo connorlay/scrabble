@@ -7,7 +7,6 @@ public interface Player {
 	public String getName();
 	public int getScore();
 	public void addScore(int newScore);
-	//public Board makeMove(Board board);
 	public void draw();
 	/** Returns the number of Letters in a player's tray**/
 	public int getNumberOfLetters();
